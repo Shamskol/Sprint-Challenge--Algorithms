@@ -22,7 +22,7 @@ b)
     sum = 0
     # The outer loop runs in O(n) * the complexity of the inner loop
     for i in range(n):
-      # This is O(1)
+      # This is O(n)
       j = 1
       # j doubles in each iteration, so this loop will run in O(log n)
       while j < n:

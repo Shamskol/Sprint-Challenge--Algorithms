@@ -99,8 +99,8 @@ class SortingRobot:
         # Set the light ON to allow for tracking whenever an item is swapped
         self.set_light_on()
 
-        # Create a while loop that runs untill the robot goes to the right all the
-        # way all the way left without having to swap items 
+        # Create a while loop that runs untill the robot goes to the right all the 
+        # way and all the way left without having to swap items 
         while self.light_is_on():
             #Turn the light off
             self.set_light_off()
@@ -131,10 +131,6 @@ class SortingRobot:
                     self.move_right()
                     self.swap_item()
                     self.move_left()                                
-                      
-
-
-
 if __name__ == "__main__":
     # Test our your implementation from the command line
     # with `python robot_sort.py`

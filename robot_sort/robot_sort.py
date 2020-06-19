@@ -113,11 +113,11 @@ class SortingRobot:
                 if self.compare_item() == 1:
                     self.swap_item()
                     self.set_light_on()
-                # Whether it swapped or not the robot goes back and goes back, put
+                # Whether it swapped or not the robot goes back and put
                 # down the item it is holding and go right empty-handed
-                    self.move_left()
-                    self.swap_item()
-                    self.move_right() 
+                self.move_left()
+                self.swap_item()
+                self.move_right() 
             # When the robot reaches the end, it goes back to the start
             while self.can_move_left():
                 self.swap_item()
@@ -128,9 +128,9 @@ class SortingRobot:
                     self.set_light_on()
             # Whether it swapped or not the robot goes back and goes back, put
                 # down the item it is holding and go left empty-handed
-                    self.move_right()
-                    self.swap_item()
-                    self.move_left()                                
+                self.move_right()
+                self.swap_item()
+                self.move_left()                                
 if __name__ == "__main__":
     # Test our your implementation from the command line
     # with `python robot_sort.py`

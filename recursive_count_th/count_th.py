@@ -21,6 +21,6 @@ def count_th(word):
         
     
 
-# print(count_th("abcthxthyzththTh"))
+print(count_th("abcthxthyzththTh"))
 print(count_th("thhtthht")) 
     
